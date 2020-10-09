@@ -19,8 +19,8 @@ header {
 .header-text {
   width: 450px;
   text-align: left;
-  position: relative;
-  left: 600px;
+  position: absolute;
+  left: 100px;
   top: 100px;
 }
 
@@ -52,21 +52,48 @@ header {
   right: 100px;
 }
 
-.link-images {
+.profile-links div {
+  display: flex;
+  place-content: end center;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 4px solid white;
   padding: 8px;
   margin: 5px;
+  height: 40px;
+  width: 40px;
 }
 
 .overview {
-  height: 439px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #f4f4f4 0% 0% no-repeat padding-box;
   opacity: 1;
 }
+
+.shape-container {
+    display: inline-flex;
+    align-items: center;
+    float: left;
+    shape-outside: inset(0px 0px 0px 0px);
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .line {
+    width: 50px;
+    height: 3px;
+    border-radius: 10px;
+    background: #5558e8
+  }
+  
+  .circle {
+    width: 10px;
+    height: 10px;
+    background: #5558e8;
+    border-radius: 50%;
+  }
 
 .overview p {
   text-align: left;
@@ -75,6 +102,7 @@ header {
   color: #000000;
   opacity: 1;
   padding: 0 20% 0 20%;
+  margin: 50px 0;
 }
 
 .tech {
@@ -85,7 +113,7 @@ header {
   height: 550px;
 }
 
- h3 {
+h3 {
   font: normal normal bold 48px/58px Montserrat;
   background-color: #0d2e62;
   padding: 10px;
@@ -93,6 +121,7 @@ header {
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
+  height: 50px;
 }
 
 .tech p {
@@ -105,7 +134,107 @@ header {
 
 .featured-projects {
   display: flex;
-  height: 2213px;
+  justify-content: center;
+  flex-wrap: wrap;
   background: #f4f4f4 0% 0% no-repeat padding-box;
   opacity: 1;
+}
+
+.featured-header {
+  margin: 100px 400px 100px 400px;
+  height: 100px;
+}
+
+.featured-header h3 {
+  text-align: center;
+}
+
+.featured-item {
+  display: flex;
+  margin: 50px;
+  flex-direction: column;
+  width: 522px;
+}
+
+.featured-item img {
+  width: 522px;
+  height: 340px;
+}
+
+.featured-item p {
+  text-align: left;
+  font: normal normal normal 25px/41px Roboto;
+  letter-spacing: 0px;
+  color: #000000;
+  margin: 20px 0;
+}
+
+.featured-item p span {
+  font: normal normal bold 25px/41px Roboto;
+  color: #1759c1;
+}
+
+.other-box {
+    margin-bottom: 100px;
+}
+
+.other-container {
+    margin-bottom: 30px;
+}
+
+.skills-container span {
+  font: normal normal normal 16px/19px Roboto;
+  letter-spacing: 0px;
+  color: #2b2e34;
+  opacity: 1;
+  margin: 0 3px;
+  padding: 0 20px;
+  background: #d3dff7;
+}
+
+.featured-header h4 {
+  font: normal normal bold 38px/47px Montserrat;
+  letter-spacing: 0px;
+  color: #0d2e62;
+  opacity: 1;
+}
+
+.other-container p {
+  text-align: left;
+  text-decoration: underline;
+  font: normal normal normal 25px/29px Roboto;
+  letter-spacing: 0px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.other-container p span {
+  color: #1759c1;
+  font: normal normal bold 25px/29px Roboto;
+}
+
+.skills {
+  background: #f4f4f4 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 200px 200px;
+  text-align: center;
+  font: normal normal bold 25px/41px Roboto;
+  letter-spacing: 0px;
+}
+
+.skills-container h5 {
+    color: #FA382F;
+    font: normal normal bold 25px/41px Roboto;
+}
+
+.skills-container p {
+    color: #000000;
+    font: normal normal normal 25px/41px Roboto; 
 }

@@ -1,0 +1,1 @@
+This is a my portfolio giving an overview of myself, my projects & my skills.

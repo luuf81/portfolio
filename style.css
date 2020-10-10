@@ -2,6 +2,10 @@
   margin: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
   background-image: url("./assets/background_image.jpg");
   height: 650px;
@@ -21,7 +25,7 @@ header {
   text-align: left;
   position: absolute;
   left: 100px;
-  top: 100px;
+  top: 150px;
 }
 
 .header-name {
@@ -72,28 +76,28 @@ header {
 }
 
 .shape-container {
-    display: inline-flex;
-    align-items: center;
-    float: left;
-    shape-outside: inset(0px 0px 0px 0px);
-    width: 60px;
-    height: 50px;
-    margin-right: 10px;
-  }
-  
-  .line {
-    width: 50px;
-    height: 3px;
-    border-radius: 10px;
-    background: #5558e8
-  }
-  
-  .circle {
-    width: 10px;
-    height: 10px;
-    background: #5558e8;
-    border-radius: 50%;
-  }
+  display: inline-flex;
+  align-items: center;
+  float: left;
+  shape-outside: inset(0px 0px 0px 0px);
+  width: 60px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.line {
+  width: 50px;
+  height: 3px;
+  border-radius: 10px;
+  background: #5558e8;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background: #5558e8;
+  border-radius: 50%;
+}
 
 .overview p {
   text-align: left;
@@ -117,11 +121,13 @@ h3 {
   font: normal normal bold 48px/58px Montserrat;
   background-color: #0d2e62;
   padding: 10px;
-  margin-bottom: 20px;
+  margin: 20px;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
-  height: 50px;
+  text-align: center;
+  align-self: center;
+  width: fit-content;
 }
 
 .tech p {
@@ -175,11 +181,11 @@ h3 {
 }
 
 .other-box {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .other-container {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .skills-container span {
@@ -213,11 +219,17 @@ h3 {
   font: normal normal bold 25px/29px Roboto;
 }
 
+.my-thoughts {
+  display: flex;
+  justify-content: center;
+}
+
 .skills {
   background: #f4f4f4 0% 0% no-repeat padding-box;
   opacity: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .skills-box {
@@ -230,11 +242,123 @@ h3 {
 }
 
 .skills-container h5 {
-    color: #FA382F;
-    font: normal normal bold 25px/41px Roboto;
+  color: #fa382f;
+  font: normal normal bold 25px/41px Roboto;
 }
 
 .skills-container p {
-    color: #000000;
-    font: normal normal normal 25px/41px Roboto; 
+  color: #000000;
+  font: normal normal normal 25px/41px Roboto;
+}
+
+/*Styling for mobile */
+
+@media (max-width: 480px) {
+  header {
+    height: 508px;
+  }
+  
+  .header-text {
+    width: 219px;
+    left: 41px;
+    top: 176px;
+  }
+  
+  .header-name {
+    font: normal normal normal 13px/15px Roboto;
+    letter-spacing: 0.52px;
+  }
+
+  .header-description {
+    font: normal normal bold 40px/49px Montserrat;
+  }
+
+  .header-subdescription {
+    font: normal normal bold 24px/29px Montserrat;
+  }
+
+  .profile-links {
+    top: 105px;
+    right: 37px;
+  }
+
+  .profile-links div {
+    padding: 0px;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-links img {
+    height: 15px;
+  }
+
+  .profile-image {
+    height: 162px;
+    top: 359px;
+    left: 176px;
+  }
+
+  .overview p {
+    font: normal normal normal 17px/29px Montserrat;
+  }
+
+  .shape-container {
+    width: 50px;
+    height: 29px;
+  }
+
+  .tech p {
+    font: normal normal normal 17px/29px Montserrat;
+  }
+
+  h3 {
+    font: normal normal bold 22px/27px Montserrat;
+  }
+
+  .featured-item {
+    width: 304px;
+    height: 300px;
+  }
+
+  .featured-item img {
+    width: 300px;
+    height: 179px;
+  }
+
+  .featured-item p {
+    font: normal normal normal 17px/29px Roboto;
+  }
+
+  .featured-item p span {
+    font: normal normal normal 17px/29px Roboto;
+  }
+
+  .other-box {
+    margin: 20px;
+  }
+
+  .other-container p {
+    font: normal normal normal 17px/29px Montserrat;
+  }
+
+  .other-container p span {
+    font: normal normal bold 17px/29px Roboto;
+  }
+
+  .skills-container span {
+    font: normal normal normal 9px/10px Roboto;
+  }
+
+  .featured-header h4 {
+    font: normal normal bold 21px/25px Montserrat;
+  }
+
+  .skills-container h5 {
+    font: normal normal bold 17px/29px Roboto;
+  }
+
+  .skills-container p {
+    font: normal normal normal 17px/29px Roboto;
+  }
 }

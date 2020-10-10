@@ -3,7 +3,7 @@
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 header {
@@ -258,42 +258,41 @@ h3 {
     position: absolute;
     right: 130px;
     top: 444px;
-}
+  }
 
-.header-name {
-  font: normal normal normal 20px/28px Roboto;
-  letter-spacing: 1.12px;
-  color: #ffffff;
-  opacity: 1;
-}
+  .header-name {
+    font: normal normal normal 20px/28px Roboto;
+    letter-spacing: 1.12px;
+    color: #ffffff;
+    opacity: 1;
+  }
 
-.header-description {
-  font: normal normal bold 50px/70px Montserrat;
-  letter-spacing: 0px;
-  color: #ffffff;
-  opacity: 1;
-}
+  .header-description {
+    font: normal normal bold 50px/70px Montserrat;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
 
-.header-subdescription {
-  font: normal normal bold 40px/50px Montserrat;
-  letter-spacing: 0px;
-  color: #ffffff;
-  opacity: 1;
-}
+  .header-subdescription {
+    font: normal normal bold 40px/50px Montserrat;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
 
-.overview p {
-  font: normal normal normal 25px/40px Montserrat;
-}
+  .overview p {
+    font: normal normal normal 25px/40px Montserrat;
+  }
 
-.tech p {
-  font: normal normal normal 20px/30px Montserrat;
-  margin: 0 200px 0 200px;
-}
+  .tech p {
+    font: normal normal normal 20px/30px Montserrat;
+    margin: 0 200px 0 200px;
+  }
 
-.other-box {
-  margin: 100px;
-}
-
+  .other-box {
+    margin: 100px;
+  }
 }
 
 /*Styling for mobile */
@@ -302,13 +301,13 @@ h3 {
   header {
     height: 508px;
   }
-  
+
   .header-text {
     width: 219px;
     left: 41px;
     top: 176px;
   }
-  
+
   .header-name {
     font: normal normal normal 13px/15px Roboto;
     letter-spacing: 0.52px;

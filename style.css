@@ -250,6 +250,52 @@ h3 {
   font: normal normal normal 25px/41px Roboto;
 }
 
+@media (max-width: 768px) {
+  .profile-image {
+    height: 230px;
+    border-radius: 50%;
+    border: solid white;
+    position: absolute;
+    right: 130px;
+    top: 444px;
+}
+
+.header-name {
+  font: normal normal normal 20px/28px Roboto;
+  letter-spacing: 1.12px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.header-description {
+  font: normal normal bold 50px/70px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.header-subdescription {
+  font: normal normal bold 40px/50px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.overview p {
+  font: normal normal normal 25px/40px Montserrat;
+}
+
+.tech p {
+  font: normal normal normal 20px/30px Montserrat;
+  margin: 0 200px 0 200px;
+}
+
+.other-box {
+  margin: 100px;
+}
+
+}
+
 /*Styling for mobile */
 
 @media (max-width: 480px) {
